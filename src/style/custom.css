@@ -1,0 +1,49 @@
+@import url(./reset.css);
+
+/* """"""""" font family  """""""" */
+@font-face {
+    font-family: iranMedium;
+    src: url(.././font/IRANSansWeb_Medium.woff);
+}
+@font-face {
+    font-family: iranBold;
+    src: url(.././font/IRANSansWeb_Bold.ttf);
+}
+@font-face {
+    font-family: iranBlack;
+    src: url(.././font/IRANSansWeb_Black.ttf);
+}
+
+/* """"""""" root  """""""" */
+:root{
+    --font-medium: iranMedium;
+    --font-Bold: iranBold;
+    --font-Black: iranBlack;
+
+    --color-white-1: #ffffff;
+    --color-white-2:#F1F1F1;
+    --color-gray-1: #7F87AB;
+    --color-gray-2: #888F9E;
+    --color-gray-3: #AAAAAA;
+    --color-gray-4: #F3F3F3;
+    --color-black: #555555;
+}
+
+/* """"""""" body  """""""" */
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-medium);
+    font-size: 1rem;
+}
+
+/* """"""""" container  """""""" */
+.container{
+    max-width:80rem ; /*1rem = 16px  <=> 80rem = 1280px*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
