@@ -1,0 +1,94 @@
+.topBar{
+    display: block;
+    width: 100%;
+    background-color: var(--color-gray-1);
+    padding: 1rem 0;
+}
+.topBar-title{
+    display: block;
+    font-weight: 500;
+    color: var(--color-white-2);
+}
+
+.topBar-buttons{
+    display: flex;
+    align-items: baseline;
+    /* width: 100%; */
+    background-color: var(--color-gray-3);
+    border: 1px solid var(--color-gray-1);
+    border-radius: 1rem;
+    padding: 0.1rem ;
+}
+.topBar-btn{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: unset;
+    font-size: 1.1rem;
+    color: var(--color-black);
+}
+.topBar-btnActive{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: unset;
+    font-size: 1.1rem;
+    color: var(--color-white-2);
+    background-color: var(--color-gray-1);
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.topBar-Links{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+}
+.topBar_link{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-white-2);
+    transition: all 0.3s ease-in-out;
+}
+.topBar_link:hover{
+    color: var(--color-gray-3);
+}
+.topBar_link:nth-child(1){
+    margin-left: 0.5rem;
+}
+.topBar_link:nth-child(2){
+    margin-right: 0.5rem;
+}
+
+
+
+ /*  Media Query  */
+
+ @media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }.topBar-title{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .topBar-Links{
+       justify-content: center;
+       margin-top: 1rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+   
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width:  100%;
+    }
+}
