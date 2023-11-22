@@ -3,6 +3,7 @@ import routes from './routes'
 
 import TopBar from "./components/module/Topbar/Topbar"
 import MainNav from "./components/module/MainNav/MainNav"
+import Navbar from "./components/module/Navbar/Navbar"
 
 function App() {
   const router = useRoutes(routes)
@@ -10,6 +11,7 @@ function App() {
     <>  
     <TopBar/>
     <MainNav/>
+    <Navbar/>
     {router}
     </>
   )
