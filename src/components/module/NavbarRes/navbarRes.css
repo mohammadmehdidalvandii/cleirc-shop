@@ -1,0 +1,81 @@
+.navbarRes{
+    display: none;
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: var(--color-gray-4);
+}
+.navbarRes-menuOrder-wrapper{
+    display: block;
+    position: relative;
+}
+.menuOrder-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;    
+    height: 3rem;
+    border: 1px solid var(--color-white-1);
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    background-color: var(--color-gray-1);
+    color: var(--color-white-1);
+}
+.navbarRes-menuOrder-items{
+    position: absolute;
+    margin-top: 0.6rem;
+    display: block;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: var(--color-gray-4);
+}
+.navBarRes-menuOrder-item{
+    display: block;
+    padding: 0.7rem 0;
+}
+.navBarRes-order-item-Link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-gray-3);
+    transition: all 0.3s ease-in-out;
+}
+.navBarRes-order-item-Link:hover{
+    color: var(--color-gray-1);
+}
+.navbarRes-menu-wrapper{
+    display: block;
+    float: left;
+}
+
+.navbarRes-menu-items{
+    left: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    .navbarRes{
+        display: block;
+    } 
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 540px;
+    }
+   
+}
+@media only screen and (max-width: 576px) {
+    .container{
+        max-width:  100%;
+    }
+    .navbarRes-menuOrder-wrapper{
+        display: none;
+    }
+}
