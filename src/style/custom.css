@@ -47,3 +47,21 @@ body{
     padding-right: 1rem;
     padding-left: 1rem;
 }
+
+.button_bg_white{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    width: 170px;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: var(--color-gray-3);
+    transition: all 0.3s ease-in-out;  
+}
+.button_white-bg:hover{
+    color: var(--color-gray-1);
+    background-color: var(--color-white-1);
+}
