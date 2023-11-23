@@ -61,7 +61,7 @@ body{
     color: var(--color-gray-3);
     transition: all 0.3s ease-in-out;  
 }
-.button_white-bg:hover{
+.button_bg_white:hover{
     color: var(--color-gray-1);
     background-color: var(--color-white-1);
 }
