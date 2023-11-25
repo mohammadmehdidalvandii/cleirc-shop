@@ -1,11 +1,11 @@
 import './ProductCard.css'
 import { NavLink } from 'react-router-dom'
 import {FaRegHeart, FaSearch, FaShoppingCart} from 'react-icons/fa'
-function ProductCard() {
+function ProductCard({img , name ,price}) {
   return (
     <div className="productCard">
     <div className="productCard-image-text">
-    <img src="/assets/images/product-1.jpg" alt="product" className="productCard-img" />
+    <img src={img} alt="product" className="productCard-img" />
     <span className="productCard-text">جدید</span>
     </div>
     <div className="productCard-linkMenu">
@@ -20,8 +20,8 @@ function ProductCard() {
         </NavLink>
     </div>
     <div className="productCard-content">
-        <NavLink to='/' className='productCard-content-linkName'>الماس برازنده</NavLink>
-        <span className="productCard-price">450,000, تومان</span>
+        <NavLink to='/' className='productCard-content-linkName'>{name}</NavLink>
+        <span className="productCard-price">{price} تومان</span>
     </div>
 </div>
   )
