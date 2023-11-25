@@ -1,0 +1,95 @@
+.productCard{
+    display: block;
+    width: 100%;
+    border: 2px solid var(--color-gray-4);
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.productCard:hover{
+    border-color: var(--color-gray-1);
+}
+.productCard:hover .productCard-linkMenu{
+   top: 40%;
+   opacity: 1;
+   animation-name: MenuLink;
+   animation-duration: 0.8s ;
+ 
+}
+.productCard-img{
+    width: 100%;
+}
+.productCard-text{
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    background-color: var(--color-gray-1);
+    padding:  0.2rem;
+    border-radius: 1rem;
+    color: var(--color-white-1);
+    font-weight: 500;
+}
+.productCard-linkMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 120px;
+    height: 3rem;
+    margin: 0 auto;
+    background-color: var(--color-gray-1);
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.productCard-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    font-size: 1.3rem;
+    color: var(--color-white-1);
+    transition: all 0.3s ease-in-out;
+}
+.productCard-link:hover{
+    transform: scale(1.2);
+}
+.productCard-content{
+    display: block;
+    text-align: center;
+    padding: 1.5em 0;
+}
+.productCard-content-linkName{
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-gray-1);
+    transition: all 0.3s ease-in-out;
+}
+.productCard-content-linkName:hover{
+    color: var(--color-black);
+}
+.productCard-price{
+    display: block;
+    margin-top: 0.4rem;
+    color: var(--color-black);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+@keyframes MenuLink{
+    25%{
+        opacity: 25%;
+        top: 10%;
+    }
+    100%{
+         opacity: 1;
+        top: 40%;
+    }
+}
+
