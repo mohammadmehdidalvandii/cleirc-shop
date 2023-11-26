@@ -55,10 +55,10 @@
 }
 @keyframes liner{
     25%{
-        width:25% ;
+        width:0 ;
     }
     50%{
-        width: 50%;
+        width: 25%;
     }
     75%{
         width: 75%;
