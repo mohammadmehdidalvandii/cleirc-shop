@@ -1,0 +1,29 @@
+.homeTrust{
+    display: block;
+    width: 100%;
+    margin: 4rem 0;
+    background-color: var(--color-gray-1);
+    padding: 2rem 0;
+}
+.homeTrust-card{
+    display: flex;  
+    align-items: center;
+    margin: 1rem 0;
+}
+.homeTrust-card-img{
+    width: 90px;
+}
+.homeTrust-card-content{
+    display: block;
+    color: var(--color-white-1);
+}
+.HomeTrust-card-title{
+    font-family: var(--font-black);
+    font-size: 1.4rem;
+}
+.HomeTrust-card-paraph{
+display: block;
+margin-top: 1rem;
+font-size: 0.9rem;
+font-weight: 500;
+}
