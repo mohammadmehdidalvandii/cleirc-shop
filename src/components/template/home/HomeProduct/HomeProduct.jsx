@@ -43,7 +43,8 @@ function HomeProduct() {
               "--swiper-pagination-bullet-horizontal-gap": "2px",
             }}
           >
-            {products.map((product) => (
+            
+            {products.slice(0,6).map((product) => (
               <SwiperSlide key={product.id}>
                 <ProductCard {...product} />
               </SwiperSlide>
