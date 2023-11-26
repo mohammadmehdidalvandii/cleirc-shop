@@ -4,37 +4,177 @@
             "id":1,
             "img":"/assets/images/product-1.jpg",
             "name":"الماس برازنده",
+            "rank":"",
+            "pattern":"",
             "price":450000
         },
         {
             "id":2,
             "img":"/assets/images/product-2.jpg",
             "name":"سرسر عقرب",
+            "rank":"",
+            "pattern":"",
             "price":300000
         },
         {
             "id":3,
             "img":"/assets/images/product-3.jpg",
             "name":"مبل سالن",
+            "rank":"",
+            "pattern":"",
             "price":2500000
         },
         {
             "id":4,
             "img":"/assets/images/product-4.jpg",
             "name":"صندلی راحتی",
+            "rank":"",
+            "pattern":"",
             "price":655000
         },
         {
             "id":5,
             "img":"/assets/images/product-5.jpg",
             "name":"رولف دور",
+            "rank":"",
+            "pattern":"",
             "price":"2900000"
         },
         {
             "id":6,
             "img":"/assets/images/product-6.jpg",
+            "name":"میز شگفت انگیزه",
+            "rank":"",
+            "pattern":"",
+            "price":2450000
+        },
+        {
+            "id":7,
+            "img":"/assets/images/product-7.jpg",
+            "name":"میز لایتز",
+            "rank":"better",
+            "pattern":"proSeller",
+            "price":1900000
+        },
+        {
+            "id":8,
+            "img":"/assets/images/product-8.jpg",
+            "name":"صندلی بیانکو",
+            "rank":"",
+            "pattern":"proSeller",
+            "price":1230000
+        },
+        {
+            "id":9,
+            "img":"/assets/images/product-9.jpg",
+            "name":"گلدان بادی",
+            "rank":"",
+            "pattern":"proSeller",
+            "price":2400000
+        },
+        {
+            "id":10,
+            "img":"/assets/images/product-10.jpg",
+            "name":"صندلی بیانکو",
+            "rank":"",
+            "pattern":"proSeller",
+            "price":3600000
+        },
+        {
+            "id":11,
+            "img":"/assets/images/product-11.jpg",
+            "name":"صندلی جام",
+            "rank":"better",
+            "pattern":"proSeller",
+            "price":5400000
+        },
+        {
+            "id":12,
+            "img":"/assets/images/product-12.jpg",
+            "name":"صندلی پایه",
+            "rank":"better",
+            "pattern":"proSeller",
+            "price":1900000
+        },
+        {
+            "id":13,
+            "img":"/assets/images/product-13.jpg",
             "name":"صندلی نخل",
+            "rank":"",
+            "pattern":"proSeller",
             "price":2000000
+        },
+        {
+            "id":14,
+            "img":"/assets/images/product-14.jpg",
+            "name":" بخار هوا",
+            "rank":"",
+            "pattern":"proSeller",
+            "price":32400000
+        },
+        {
+            "id":15,
+            "img":"/assets/images/product-15.jpg",
+            "name":"  صندلی بیانکو",
+            "rank":"better",
+            "pattern":"new",
+            "price":1345000
+        },
+        {
+            "id":16,
+            "img":"/assets/images/product-16.jpg",
+            "name":"صندلی اداری",
+            "rank":"",
+            "pattern":"new",
+            "price":2342000
+        },
+        {
+            "id":17,
+            "img":"/assets/images/product-17.jpg",
+            "name":"  میز دوکشو",
+            "rank":"better",
+            "pattern":"new",
+            "price":5490000
+        },
+        {
+            "id":18,
+            "img":"/assets/images/product-18.jpg",
+            "name":"صندلی توری",
+            "rank":"better",
+            "pattern":"new",
+            "price":1540000
+        },
+        {
+            "id":19,
+            "img":"/assets/images/product-19.jpg",
+            "name":"وندوم بیانکو ",
+            "rank":"",
+            "pattern":"new",
+            "price":345000
+        },
+        {
+            "id":20,
+            "img":"/assets/images/product-20.jpg",
+            "name":"راحتی صندلی",
+            "rank":"better",
+            "pattern":"new",
+            "price":987000
+        },
+        {
+            "id":21,
+            "img":"/assets/images/product-21.jpg",
+            "name":"  میز تلفن",
+            "rank":"better",
+            "pattern":"new",
+            "price":236000
+        },
+        {
+            "id":22,
+            "img":"/assets/images/product-22.jpg",
+            "name":"بلور دکور",
+            "rank":"",
+            "pattern":"new",
+            "price":546000
         }
        
     ]
