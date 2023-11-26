@@ -1,0 +1,39 @@
+.homeProduct{
+    display: block;
+    width: 100%;
+    margin: 4rem 0;
+}
+.homeProduct-banner{
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+}
+.homeProduct-banner-img{
+    width: 100%;    
+}
+.homeProduct-banner-content{
+    display: block;
+    position: absolute;
+    top: 20%;
+    padding-right: 1rem;
+    width: 250px;
+    height: 100%;
+}
+.homeProduct-banner-minTitle{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-gray-1);
+}
+.homeProduct-banner-bigTitle{
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-black);
+}
+.homeProduct-banner-paraph{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-gray-3);
+}
+
