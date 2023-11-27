@@ -1,7 +1,7 @@
 import './NavStatus.css'
 import { NavLink } from 'react-router-dom'
 import {MdOutlineKeyboardDoubleArrowLeft} from 'react-icons/md'
-function NavStatus() {
+function NavStatus({status}) {
   return (
     <section className="navStatus">
         <div className="container">
@@ -12,7 +12,7 @@ function NavStatus() {
                         <span className="navStatus-icon">
                             <MdOutlineKeyboardDoubleArrowLeft/>
                         </span>
-                        <h6 className="navStatus-status">محصولات</h6>
+                        <h6 className="navStatus-status">{status}</h6>
                     </div>
                 </div>
             </div>

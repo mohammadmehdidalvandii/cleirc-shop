@@ -3,7 +3,7 @@ import NavStatus from "../../components/module/NavStatus/NavStatus"
 function Product() {
   return (
    <>
-   <NavStatus/>
+   <NavStatus status="محصولات"/>
    <br /><br /><br /><br />
    </>
   )
