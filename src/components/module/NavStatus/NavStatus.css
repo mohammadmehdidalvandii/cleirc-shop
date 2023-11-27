@@ -1,0 +1,31 @@
+.navStatus{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0;
+    height: 3rem;
+    background-color: var(--color-gray-4);
+}
+.navStatus-wrapper{
+    display: flex;
+    align-items: baseline;
+}
+.navStatus-link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-gray-3);
+    transition: all 0.3s ease-in-out;
+}
+.navStatus-link:hover{
+    color: var(--color-gray-1);
+}
+.navStatus-icon{
+    margin: 0 1.5rem;
+    font-size: 1.5rem;
+    color: var(--color-black);
+}
+.navStatus-status{
+    font-size: 1.3rem;
+    color: var(--color-gray-1);
+}

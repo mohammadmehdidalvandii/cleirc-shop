@@ -1,8 +1,11 @@
-
+import NavStatus from "../../components/module/NavStatus/NavStatus"
 
 function Product() {
   return (
-    <div>Product</div>
+   <>
+   <NavStatus/>
+   <br /><br /><br /><br />
+   </>
   )
 }
 
