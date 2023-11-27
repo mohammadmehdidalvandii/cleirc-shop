@@ -14,6 +14,7 @@ function Navbar() {
     useEffect(()=>{
         const pathName = location.pathname
         SetActiveMenuNav(pathName)
+        window.scroll(0,0)
     },[location])
 
 
