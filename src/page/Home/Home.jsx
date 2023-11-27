@@ -11,8 +11,7 @@ function Home() {
     <HomeProduct/>
     <ProductPack/>
     <HomeTrust/>
-    <HomeNews/>
-    <br /><br /><br /><br />  
+    <HomeNews/> 
    </>
   )
 }
