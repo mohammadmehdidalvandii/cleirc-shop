@@ -1,0 +1,81 @@
+.Footer{
+    display: block;
+    padding: 4rem 0;
+    background-color: var(--color-gray-4);
+}
+.footer-title{
+    display: block;
+    font-family: var(--font-black);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-gray-3);
+}
+.footer-items{
+    display: block;
+    margin-trim: block-end;
+}
+.footer-item{
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.footer-item-link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-black);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-item-link:hover{
+    color: var(--color-gray-1);
+}
+
+.footer-newsletter{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.footer-newsletter-paraph{
+    display: block;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-black);
+}
+.footer-newsletter-form{
+    display: block;
+    margin-top: 2rem;
+}
+.footer-newsletter-formInput{
+    display: block;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: var(--color-white-1);
+    margin: 0 auto;
+    width: 300px;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.footer-newsletter-formBnt{
+    display: block;
+    margin: 1rem auto;
+    height: 3rem;
+    width: 300px;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--color-gray-1);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-white-1);
+    transition: all 0.3s ease-in-out;
+}
+.footer-newsletter-formBnt:hover{
+    background-color: var(--color-white-1);
+    color: var(--color-gray-1);
+}
