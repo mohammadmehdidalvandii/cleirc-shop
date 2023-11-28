@@ -106,7 +106,7 @@ function NavbarRes() {
                   </NavLink>
                 </li>
                 <li className="navBarRes-menuOrder-item">
-                  <NavLink to="/" className="navBarRes-order-item-Link">
+                  <NavLink to="/Article" className="navBarRes-order-item-Link">
                     وبلاگ
                   </NavLink>
                 </li>

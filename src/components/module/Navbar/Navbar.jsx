@@ -67,7 +67,7 @@ function Navbar() {
                             <NavLink to='/Product' className={`navbar-menu-Link ${activeMenuNav === '/Product' ?'navbar-menu-LinkActive':null}`}>محصولات</NavLink>
                         </li>
                         <li className="navbar-menu">
-                            <NavLink to='/' className={`navbar-menu-Link ${activeMenuNav === '/article' ?'navbar-menu-LinkActive':null}`}>وبلاگ</NavLink>
+                            <NavLink to='/Article' className={`navbar-menu-Link ${activeMenuNav === '/article' ?'navbar-menu-LinkActive':null}`}>وبلاگ</NavLink>
                         </li>
                         <li className="navbar-menu">
                             <NavLink to='/' className={`navbar-menu-Link ${activeMenuNav === '/about' ?'navbar-menu-LinkActive':null}`}>درباه ما</NavLink>
