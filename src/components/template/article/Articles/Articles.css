@@ -1,0 +1,18 @@
+.articles{
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;    
+}
+.article-title{
+    font-family: var(--font-black);
+    font-size: 2.5rem;
+    color: var(--color-black);
+}
+.article-btn{
+    display: block;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    width: 150px;
+    background-color: unset;
+}
