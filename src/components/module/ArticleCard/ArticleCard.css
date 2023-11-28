@@ -1,0 +1,42 @@
+
+.articleCard{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--color-gray-4);
+    border-radius: 0.3rem;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.articleCard:hover{
+    background-color: var(--color-gray-4);
+}
+.articleCard-img{
+   width: 300px;
+   height: 100%;
+}
+.articleCard-content{
+ display: block;
+ padding: 0 1rem;
+}
+.articleCard-minTitle{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--color-gray-3);
+}
+.articleCard-bigTitle{
+    font-family: var(--font-black);
+    color: var(--color-black);
+    font-size: 1.3rem;  
+}
+.articleCard-description{
+    font-size: 0.9rem;
+    color: var(--color-gray-3);
+}   
+.articleCard-create-Article{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-black);
+}
