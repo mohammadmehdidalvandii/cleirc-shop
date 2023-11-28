@@ -6,7 +6,6 @@ function Product() {
    <>
    <NavStatus status="محصولات"/>
   <Products/>
-   <br /><br /><br /><br />
    </>
   )
 }
