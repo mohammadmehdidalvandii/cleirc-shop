@@ -24,7 +24,7 @@ function TopBar() {
                                 </div>
                                 <div className="col-lg-6 col-md-12">
                                     <div className="topBar-Links">
-                                        <NavLink className="topBar_link">ورود | ثبت نام</NavLink>
+                                        <NavLink to='/LoginRegister' className="topBar_link">ورود | ثبت نام</NavLink>
                                     </div>
                                 </div>
                             </div>
