@@ -10,7 +10,7 @@ function Login() {
       <div className="login-wrapper">
         <h6 className="login-title">وارد حساب کاربری خود شوید</h6>
         <Formik
-         initialValues={{text:" " , password:" "}}
+         initialValues={{text:"" , password:""}}
         validate={(values)=>{
             const errors = {};
 
