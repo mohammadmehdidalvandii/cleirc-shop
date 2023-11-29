@@ -1,8 +1,12 @@
-
+import NavStatus from '../../components/module/NavStatus/NavStatus'
+import AboutTitleBanner from '../../components/template/about/AboutTitleBanner/AboutTitleBanner'
 
 function About() {
   return (
-    <div>About</div>
+    <>
+      <NavStatus status='درباه ما'/>
+      <AboutTitleBanner/>
+    </>
   )
 }
 

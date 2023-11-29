@@ -1,0 +1,36 @@
+.aboutTitleBanner{
+    display: block;
+    width: 100%;
+    margin: 4rem 0;
+}
+.about-title{
+    display: block;
+width: 100%;
+font-family: var(--font-black);
+font-size: 2.5rem;
+color: var(--color-black);
+}
+
+.about-banner-content{
+    display: block;
+    position: relative;
+}
+.about-banner-img{
+    width: 100%;
+}
+.about-content{
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 5rem;
+    width: 250px;
+}
+.about-content-title{
+    font-family: var(--font-black);
+    font-size: 2rem;
+    color: var(--color-black);
+}
+.about-content-description{
+    font-size: 1.1rem;
+    color: var(--color-gray-1);
+}
