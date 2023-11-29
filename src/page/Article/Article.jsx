@@ -7,7 +7,6 @@ function Article() {
     <>
         <NavStatus status='وبلاگ'/>
         <Articles/>
-        <br /><br /><br /><br />
     </>
   )
 }

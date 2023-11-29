@@ -70,7 +70,7 @@ function Navbar() {
                             <NavLink to='/Article' className={`navbar-menu-Link ${activeMenuNav === '/Article' ?'navbar-menu-LinkActive':null}`}>وبلاگ</NavLink>
                         </li>
                         <li className="navbar-menu">
-                            <NavLink to='/' className={`navbar-menu-Link ${activeMenuNav === '/about' ?'navbar-menu-LinkActive':null}`}>درباه ما</NavLink>
+                            <NavLink to='/About' className={`navbar-menu-Link ${activeMenuNav === '/About' ?'navbar-menu-LinkActive':null}`}>درباه ما</NavLink>
                         </li>
                     </ul>
                 </div>
