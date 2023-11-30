@@ -1,5 +1,6 @@
 import NavStatus from '../../components/module/NavStatus/NavStatus'
 import Login from '../../components/template/loginRegister/Login/Login'
+import Register from '../../components/template/loginRegister/Register/Register'
 
 function LoginRegister() {
   return (
@@ -12,7 +13,7 @@ function LoginRegister() {
                      <Login/>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
-                    this is col
+                   <Register/>
                 </div>
             </div>
         </div>

@@ -1,9 +1,9 @@
-.login{
+.register{
     display: block;
     width: 100%;
     margin: 2rem 0;
 }
-.login-wrapper{
+.register-wrapper{
     display: block;
     width: 100%;
     border: 1px solid var(--color-gray-4);
@@ -11,7 +11,7 @@
     padding: 1rem;
     box-shadow: 0 0 0.3rem 0.3rem var(--color-gray-4);
 }
-.login-title{
+.register-title{
     display: block;
     margin-bottom: 1rem;
     width: 100%;
@@ -19,42 +19,11 @@
     font-size: 1.2rem;
     color: var(--color-black);
 }
-.login-form{
-
-}
-.login-mediaLogin{
+.register-form{
     display: block;
-    margin: 1rem 0;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-gray-4);
 }
-.login-mediaLogin-title{
-    display: block;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-gray-3);
-}
-.login-mediaLogin-links{
-    display: flex;
-    align-items: center;
-    margin-top: 0.5rem;
-}
-.login-mediaLogin-link{
-    margin-left: 1.5rem;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-black);
-    transition: all 0.3s ease-in-out;
-}
-.login-mediaLogin-link:hover{
-    color: var(--color-gray-1);
-    transform: scale(1.05);
-}
-/* .login-mediaLogin-link-icon{
-
-}
-.login-mediaLogin-link-text{
-
-} */
 
 .formBox{
     display: block;
@@ -80,29 +49,27 @@
     font-size: 1rem;
     font-weight: 400;
     color: var(--color-black);
-}   
+} 
 
-
-.login-formLink-checkBox{
+.register-checkBox{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    align-items: baseline;
 }
-.login-checkBox{
-    display: flex;
-    align-items: center;
-}
-.login-formLinkForget{
+.register-checkBox .span{
     font-size: 0.9rem;
     font-weight: 400;
     color: var(--color-gray-3);
+}
+.formBox-textLink{
+    margin-right: 0.4rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--color-gray-1);
     transition: all 0.3s ease-in-out;
 }
-.login-formLinkForget:hover{
-    color: var(--color-gray-1);
+.formBox-textLink:hover{
+    color: var(--color-gray-3);
 }
-
 
 .form-btn-submit{
     display: flex;
