@@ -24,9 +24,9 @@ function MainNav() {
                             <FiShoppingCart className='mainNav-link-icon'/>
                             <span className="mainNav-Link-shopping-num">0</span>
                         </NavLink>
-                        <NavLink to='/' className='mainNav-Link'>
+                        {/* <NavLink to='/' className='mainNav-Link'>
                             <MdOutlinePerson4 className='mainNav-link-icon'/>
-                        </NavLink>
+                        </NavLink> */}
                     </div>
                 </div>
             </div>
