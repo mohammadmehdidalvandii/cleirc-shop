@@ -17,7 +17,6 @@ function LoginRegister() {
                 </div>
             </div>
         </div>
-        <br /><br /><br /><br />
     </>
   )
 }
