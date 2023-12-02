@@ -1,3 +1,4 @@
+import BasketCard from '../../module/BasketCard/BasketCard'
 import './BasketPage.css'
 import {NavLink} from 'react-router-dom'
 
@@ -7,7 +8,7 @@ function BasketPage() {
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    this is basket card
+                    <BasketCard/>
                 </div>
             </div>
             <div className="row mt-4">

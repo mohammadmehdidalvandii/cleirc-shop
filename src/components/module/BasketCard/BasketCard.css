@@ -1,0 +1,68 @@
+.basketCard{
+    display: block;
+    width: 100%;
+    border: 1px solid var(--color-gray-4);
+    border-radius: 0.5rem;
+}
+.basketCard-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.basketCard-item{
+
+}
+.basketCard-img{
+    width: 200px;
+}
+.basketCard-productName{
+    font-family: var(--font-black);
+    font-size: 2rem;
+    color: var(--color-black);
+}
+.basketCard-countProduct{
+    display: flex;
+    align-items: center;
+}
+.basketCard-btnCount{
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-gray-4);
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: var(--color-gray-1);
+}
+.basketCard-countProduct-minus{
+
+}
+.basketCard-countProduct-number{
+    font-size: 1.5rem;
+    color: var(--color-black);
+}
+.basketCard-countProduct-plus{
+  
+}
+.basketCard-price{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-black);
+}
+.basketCard-DeleteBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-gray-4);
+    font-size: 1.5rem;
+    color: var(--color-gray-1);
+    transition: all 0.3s ease-in-out;
+}
+
+.basketCard-DeleteBtn:hover{
+    color: red;
+}
