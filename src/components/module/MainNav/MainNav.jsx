@@ -20,7 +20,7 @@ function MainNav() {
                 </div>
                 <div className="col-lg-2 col-md-12">
                     <div className="mainNav-Links">
-                        <NavLink to='/' className='mainNav-Link mainNav-Link-shopping'>
+                        <NavLink to='/Basket' className='mainNav-Link mainNav-Link-shopping'>
                             <FiShoppingCart className='mainNav-link-icon'/>
                             <span className="mainNav-Link-shopping-num">0</span>
                         </NavLink>
