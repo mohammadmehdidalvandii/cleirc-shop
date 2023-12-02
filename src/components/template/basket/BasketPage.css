@@ -1,0 +1,32 @@
+.basketPage{
+    display: block;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.basketPage-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.basketPage-card-price{
+    font-family: var(--font-black);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.basketPage-card-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 120px;
+    height: 2rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--color-gray-1);
+    border-radius: 0.5rem;
+    color: var(--color-white-2);
+    transition: all 0.3s  ease-in-out;
+}
+.basketPage-card-btn:hover{
+    background-color: var(--color-gray-3);
+}
