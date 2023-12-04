@@ -1,7 +1,6 @@
 import './Products.css'
 import {MdSearch} from 'react-icons/md'
 import ProductCard from '../../../module/ProductCard/ProductCard'
-import db from '../../../../data/db.json'
 import { useContext, useState } from 'react'
 import productContext from '../../../../contexts/productContext'
 function Products() {
