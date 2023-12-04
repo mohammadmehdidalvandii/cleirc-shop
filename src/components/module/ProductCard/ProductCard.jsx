@@ -1,7 +1,10 @@
 import './ProductCard.css'
 import { NavLink } from 'react-router-dom'
 import {FaRegHeart, FaSearch, FaShoppingCart} from 'react-icons/fa'
-function ProductCard({img , name ,price}) {
+
+function ProductCard({img , name ,price , addToBasket}) {
+
+ 
   return (
     <div className="productCard">
     <div className="productCard-image-text">
@@ -15,7 +18,7 @@ function ProductCard({img , name ,price}) {
         <NavLink to='/' className='productCard-link'>
             <FaSearch/>
         </NavLink>
-        <NavLink to='/' className='productCard-link'>
+        <NavLink to='#' className='productCard-link' onClick={addToBasket}>
             <FaShoppingCart/>
         </NavLink>
     </div>

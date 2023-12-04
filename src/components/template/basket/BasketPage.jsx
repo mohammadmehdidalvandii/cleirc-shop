@@ -13,7 +13,7 @@ function BasketPage() {
             </div>
             <div className="row mt-4">
                 <div className="basketPage-card">
-                    <span className="basketPage-card-price">1,920,000 تومان</span>
+                    <span className="basketPage-card-price">تومان</span>
                 <NavLink to='/' className='basketPage-card-btn'>ادامه خرید</NavLink>
                 </div>
             </div>

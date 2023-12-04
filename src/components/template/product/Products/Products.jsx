@@ -21,6 +21,8 @@ function Products() {
             searchProductsHandler();
     
     },[search])
+
+   
    
   return (
     <section className="products">
@@ -44,13 +46,32 @@ function Products() {
                 allProducts? (
                     productData.products.map(product=>(
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
-                      <ProductCard {...product}  price={product.price.toLocaleString()} key={product.id} />
+                      <ProductCard {...product}  price={product.price.toLocaleString()} key={product.id} 
+                      addToBasket={()=>{
+                        let newUserBasket = {
+                            id:productData.userBasket.length+1,
+                            name:product.name,
+                            img:product.img,
+                            price: product.price
+                        }
+                        productData.setUserBasket((prevProducts)=>[...prevProducts,newUserBasket])
+                      }} />
                       </div>
                   ))
                 ):(
                     productData.products.slice(0,11).map(product=>(
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
-                      <ProductCard {...product} price={product.price.toLocaleString()} key={product.id}/>
+                      <ProductCard {...product} price={product.price.toLocaleString()} key={product.id}
+                           addToBasket={()=>{
+                            let newUserBasket = {
+                                id:productData.userBasket.length+1,
+                                name:product.name,
+                                img:product.img,
+                                price: product.price
+                            }
+                            productData.setUserBasket((prevProducts)=>[...prevProducts,newUserBasket])
+                          }}
+                      />
                       </div>
                   ))
                 )
