@@ -2,9 +2,11 @@ import './Products.css'
 import {MdSearch} from 'react-icons/md'
 import ProductCard from '../../../module/ProductCard/ProductCard'
 import db from '../../../../data/db.json'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import productContext from '../../../../contexts/productContext'
 function Products() {
-    const [products , setProducts] =useState([...db.products])
+    const productData = useContext(productContext)
+  
     const [allProducts ,setAllProducts] =useState(false)
     const [search , setSearch] = useState('')
 
@@ -12,8 +14,8 @@ function Products() {
         setAllProducts(true)
     }
     const searchProductsHandler =()=>{
-            const newProduct = db.products.filter(product => product.name.includes(search))
-            setProducts(newProduct)
+            const newProduct = productData.products.filter(product => product.name.includes(search))
+        productData.setProducts(newProduct)
     }
     useState(()=>{
   
@@ -30,34 +32,36 @@ function Products() {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="productFilter-search">
-                    <input type="text" value={search} onChange={(e)=>setSearch(e.target.value) }   className='productFilter-input' placeholder='جستجو ...(نام محصول)'/>
-                    <button className="productFilter-btn" onClick={searchProductsHandler}>
+                    <input type="text"  className='productFilter-input' placeholder='جستجو ...(نام محصول)'  value={search} onChange={(e)=>setSearch(e.target.value) }/>
+                   
+                    <button className="productFilter-btn" onClick={searchProductsHandler} >
                         <MdSearch className='productFilter-icon'/>
                     </button>
                 </div>
             </div>
         </div>
         <div className="row mt-5">
-
-            {allProducts ? (
-                products.map(product=>(
-
-                  <div className="col-lg-3 col-md-6 col-sm-12" key={product}>
-                <ProductCard  {...product} price={product.price.toLocaleString()}/>
-                     </div>
-                ))
-            ):(
-                products.slice(0 , 11.).map(product=>(
-                  <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
-                <ProductCard {...product} price={product.price.toLocaleString()}/>
-                    </div>
-                ))
-            )}
+            {
+                allProducts? (
+                    productData.products.map(product=>(
+                        <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
+                      <ProductCard {...product}  price={product.price.toLocaleString()} key={product.id} />
+                      </div>
+                  ))
+                ):(
+                    productData.products.slice(0,11).map(product=>(
+                        <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
+                      <ProductCard {...product} price={product.price.toLocaleString()} key={product.id}/>
+                      </div>
+                  ))
+                )
+            }
         </div>
         <div className="row mt-3">
             <button className='button_bg_white products-btn' 
+            onClick={showAllProducts}
             style={{display :allProducts ? "none" :"block"}}
-             onClick={showAllProducts}>مشاهد بیشتر</button>
+            >مشاهد بیشتر</button>
         </div>
     </div>
 </section>
