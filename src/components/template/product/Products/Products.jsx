@@ -3,6 +3,7 @@ import {MdSearch} from 'react-icons/md'
 import ProductCard from '../../../module/ProductCard/ProductCard'
 import { useContext, useState } from 'react'
 import productContext from '../../../../contexts/productContext'
+import swal from 'sweetalert'
 function Products() {
     const productData = useContext(productContext)
   
@@ -48,6 +49,7 @@ function Products() {
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
                       <ProductCard {...product}  price={product.price.toLocaleString()} key={product.id} 
                       addToBasket={()=>{
+                        swal({title:"محصول اضافه شد"})
                         let newUserBasket = {
                             id:productData.userBasket.length+1,
                             name:product.name,
@@ -63,6 +65,7 @@ function Products() {
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
                       <ProductCard {...product} price={product.price.toLocaleString()} key={product.id}
                            addToBasket={()=>{
+                            swal({title:"محصول اضافه شد" ,icon:"success" ,buttons:"باشه"})
                             let newUserBasket = {
                                 id:productData.userBasket.length+1,
                                 name:product.name,
