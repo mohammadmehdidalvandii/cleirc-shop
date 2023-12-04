@@ -2,16 +2,19 @@ import "./HomeProduct.css";
 import TitleCenter from "../../../module/TitleCenter/TitleCenter";
 import ProductCard from "../../../module/ProductCard/ProductCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import db from "../../../../data/db.json";
+// import db from "../../../../data/db.json";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
+
+import productContext from '../../../../contexts/productContext'
 function HomeProduct() {
-  const [products] = useState(db.products);
+  const productData = useContext(productContext)
+  // const [products] = useState(db.products);
   return (
     <section className="homeProduct">
       <div className="container">
@@ -44,11 +47,24 @@ function HomeProduct() {
             }}
           >
             
-            {products.slice(0,6).map((product) => (
-              <SwiperSlide key={product.id}>
-                <ProductCard {...product} />
+
+            {
+              productData.products.slice(0,6).map(product=>(
+                <SwiperSlide key={product.id}>
+                <ProductCard {...product}
+                     addToBasket={()=>{
+                      let newUserBasket = {
+                          id:productData.userBasket.length+1,
+                          name:product.name,
+                          img:product.img,
+                          price: product.price
+                      }
+                      productData.setUserBasket((prevProducts)=>[...prevProducts,newUserBasket])
+                    }}
+                />
               </SwiperSlide>
-            ))}
+              ))
+            }
           </Swiper>
         </div>
 
