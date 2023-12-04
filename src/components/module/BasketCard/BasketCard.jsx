@@ -20,7 +20,7 @@ const handlerBtnPlus = ()=>{
   return (
         <>
             {productData.userBasket.map(product=>(
-                <>
+                
                       <div className="basketCard" key={product.id}>
                       <ul className="basketCard-items">
                           <li className="basketCard-item">
@@ -45,8 +45,7 @@ const handlerBtnPlus = ()=>{
                               </span>
                           </li>
                       </ul>
-                     </div>
-                  </>   
+                     </div>  
             ))}
         </>
   )
