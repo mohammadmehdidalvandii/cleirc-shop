@@ -6,7 +6,8 @@
             "name":"الماس برازنده",
             "rank":"",
             "pattern":"",
-            "price":450000
+            "price":450000,
+            "count":1
         },
         {
             "id":2,
@@ -14,7 +15,8 @@
             "name":"سرسر عقرب",
             "rank":"",
             "pattern":"",
-            "price":300000
+            "price":300000,
+            "count":1
         },
         {
             "id":3,
@@ -22,7 +24,8 @@
             "name":"مبل سالن",
             "rank":"",
             "pattern":"",
-            "price":2500000
+            "price":2500000,
+            "count":1
         },
         {
             "id":4,
@@ -30,7 +33,8 @@
             "name":"صندلی راحتی",
             "rank":"",
             "pattern":"",
-            "price":655000
+            "price":655000,
+            "count":1
         },
         {
             "id":5,
@@ -38,7 +42,8 @@
             "name":"رولف دور",
             "rank":"",
             "pattern":"",
-            "price":"2900000"
+            "price":"2900000",
+            "count":1
         },
         {
             "id":6,
@@ -46,7 +51,8 @@
             "name":"میز شگفت انگیزه",
             "rank":"",
             "pattern":"",
-            "price":2450000
+            "price":2450000,
+            "count":1
         },
         {
             "id":7,
@@ -54,7 +60,8 @@
             "name":"میز لایتز",
             "rank":"better",
             "pattern":"proSeller",
-            "price":1900000
+            "price":1900000,
+            "count":1
         },
         {
             "id":8,
@@ -62,7 +69,8 @@
             "name":"صندلی بیانکو",
             "rank":"",
             "pattern":"proSeller",
-            "price":1230000
+            "price":1230000,
+            "count":1
         },
         {
             "id":9,
@@ -70,7 +78,8 @@
             "name":"گلدان بادی",
             "rank":"",
             "pattern":"proSeller",
-            "price":2400000
+            "price":2400000,
+            "count":1
         },
         {
             "id":10,
@@ -78,7 +87,8 @@
             "name":"صندلی بیانکو",
             "rank":"",
             "pattern":"proSeller",
-            "price":3600000
+            "price":3600000,
+            "count":1
         },
         {
             "id":11,
@@ -86,7 +96,8 @@
             "name":"صندلی جام",
             "rank":"better",
             "pattern":"proSeller",
-            "price":5400000
+            "price":5400000,
+            "count":1
         },
         {
             "id":12,
@@ -94,7 +105,8 @@
             "name":"صندلی پایه",
             "rank":"better",
             "pattern":"proSeller",
-            "price":1900000
+            "price":1900000,
+            "count":1
         },
         {
             "id":13,
@@ -102,7 +114,8 @@
             "name":"صندلی نخل",
             "rank":"",
             "pattern":"proSeller",
-            "price":2000000
+            "price":2000000,
+            "count":1
         },
         {
             "id":14,
@@ -110,7 +123,8 @@
             "name":" بخار هوا",
             "rank":"",
             "pattern":"proSeller",
-            "price":32400000
+            "price":32400000,
+            "count":1
         },
         {
             "id":15,
@@ -118,7 +132,8 @@
             "name":"  صندلی بیانکو",
             "rank":"better",
             "pattern":"new",
-            "price":1345000
+            "price":1345000,
+            "count":1
         },
         {
             "id":16,
@@ -126,7 +141,8 @@
             "name":"صندلی اداری",
             "rank":"",
             "pattern":"new",
-            "price":2342000
+            "price":2342000,
+            "count":1
         },
         {
             "id":17,
@@ -134,7 +150,8 @@
             "name":"  میز دوکشو",
             "rank":"better",
             "pattern":"new",
-            "price":5490000
+            "price":5490000,
+            "count":1
         },
         {
             "id":18,
@@ -142,7 +159,8 @@
             "name":"صندلی توری",
             "rank":"better",
             "pattern":"new",
-            "price":1540000
+            "price":1540000,
+            "count":1
         },
         {
             "id":19,
@@ -150,7 +168,8 @@
             "name":"وندوم بیانکو ",
             "rank":"",
             "pattern":"new",
-            "price":345000
+            "price":345000,
+            "count":1
         },
         {
             "id":20,
@@ -158,7 +177,8 @@
             "name":"راحتی صندلی",
             "rank":"better",
             "pattern":"new",
-            "price":987000
+            "price":987000,
+            "count":1
         },
         {
             "id":21,
@@ -166,7 +186,8 @@
             "name":"  میز تلفن",
             "rank":"better",
             "pattern":"new",
-            "price":236000
+            "price":236000,
+            "count":1
         },
         {
             "id":22,
@@ -174,7 +195,8 @@
             "name":"بلور دکور",
             "rank":"",
             "pattern":"new",
-            "price":546000
+            "price":546000,
+            "count":1
         }
        
     ],
