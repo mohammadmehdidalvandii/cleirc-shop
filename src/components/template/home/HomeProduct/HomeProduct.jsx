@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
+import swal from "sweetalert";
 
 import productContext from '../../../../contexts/productContext'
 function HomeProduct() {
@@ -53,6 +54,7 @@ function HomeProduct() {
                 <SwiperSlide key={product.id}>
                 <ProductCard {...product}
                      addToBasket={()=>{
+                      swal({title:"محصول اضافه شد"})
                       let newUserBasket = {
                           id:productData.userBasket.length+1,
                           name:product.name,
