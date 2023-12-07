@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import './ProductPack.css'
-import db from '../../../../data/db.json'
 import ProductCard from '../../../module/ProductCard/ProductCard'
+import productContext from '../../../../contexts/productContext'
 
 function ProductPack() {
-    const [products ,SetProducts] =useState(db.products)
+    const productData = useContext(productContext)
+  
     const [menuProduct , SetMenuProduct] =useState('proSeller')
 
     const handlerProductPack = (ProductID)=>{
@@ -22,24 +23,81 @@ function ProductPack() {
             </div>
             <div className="row mt-5">
                 {menuProduct === 'proSeller' && (
-                    products.filter(product => product.pattern.includes('proSeller')).map(product=>(
+                    productData.products.filter(product => product.pattern.includes('proSeller')).map(product=>(
                     <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
-                        <ProductCard {...product} price={product.price.toLocaleString()}/>
+                        <ProductCard {...product} price={product.price.toLocaleString()}
+                               addToBasket={()=>{
+                            let isProductInBasket = productData.userBasket.some(basketProduct => 
+                                basketProduct.name === product.name 
+                            );
+                            
+                            if (isProductInBasket) {
+                                swal({ title: "این محصول در سبد خرید وجود دارد", icon: "warning" });
+                            } else {
+                                swal({ title: "محصول اضافه شد", icon: "success" , buttons:"باشه" });
+                                let newUserBasket = {
+                                    id: product.id,
+                                    name: product.name,
+                                    img: product.img,
+                                    price: product.price
+                                }
+                                productData.setUserBasket((prevProducts) => [...prevProducts, newUserBasket]);
+                            }
+                          }}
+                        />
                     </div>
                     ))
                 )}
 
                 {menuProduct === 'new' &&(
-                    products.filter(product=> product.pattern.includes('new')).map(product=>(
+                    productData.products.filter(product=> product.pattern.includes('new')).map(product=>(
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
-                        <ProductCard {...product} price={product.price.toLocaleString()}/>
+                        <ProductCard {...product} price={product.price.toLocaleString()}
+                               addToBasket={()=>{
+                            let isProductInBasket = productData.userBasket.some(basketProduct => 
+                                basketProduct.name === product.name 
+                            );
+                            
+                            if (isProductInBasket) {
+                                swal({ title: "این محصول در سبد خرید وجود دارد", icon: "warning" });
+                            } else {
+                                swal({ title: "محصول اضافه شد", icon: "success" , buttons:"باشه" });
+                                let newUserBasket = {
+                                    id: product.id,
+                                    name: product.name,
+                                    img: product.img,
+                                    price: product.price
+                                }
+                                productData.setUserBasket((prevProducts) => [...prevProducts, newUserBasket]);
+                            }
+                          }}
+                        />
                     </div>
                     ))
                 )}
                {menuProduct === 'better' &&(
-                products.filter(product=> product.rank.includes('better')).map(product=>(
+                productData.products.filter(product=> product.rank.includes('better')).map(product=>(
                     <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
-                    <ProductCard {...product} price={product.price.toLocaleString()}/>
+                    <ProductCard {...product} price={product.price.toLocaleString()}
+                           addToBasket={()=>{
+                            let isProductInBasket = productData.userBasket.some(basketProduct => 
+                                basketProduct.name === product.name 
+                            );
+                            
+                            if (isProductInBasket) {
+                                swal({ title: "این محصول در سبد خرید وجود دارد", icon: "warning" });
+                            } else {
+                                swal({ title: "محصول اضافه شد", icon: "success" , buttons:"باشه" });
+                                let newUserBasket = {
+                                    id: product.id,
+                                    name: product.name,
+                                    img: product.img,
+                                    price: product.price
+                                }
+                                productData.setUserBasket((prevProducts) => [...prevProducts, newUserBasket]);
+                            }
+                          }}
+                    />
                 </div>
                 ))
                )}
