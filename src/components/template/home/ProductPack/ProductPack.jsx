@@ -2,6 +2,7 @@ import { useContext, useState } from 'react'
 import './ProductPack.css'
 import ProductCard from '../../../module/ProductCard/ProductCard'
 import productContext from '../../../../contexts/productContext'
+import swal from 'sweetalert'
 
 function ProductPack() {
     const productData = useContext(productContext)
