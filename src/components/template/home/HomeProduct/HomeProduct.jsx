@@ -54,7 +54,7 @@ function HomeProduct() {
                 <SwiperSlide key={product.id}>
                 <ProductCard {...product}
                      addToBasket={()=>{
-                      swal({title:"محصول اضافه شد"})
+                      swal({title:"محصول اضافه شد", icon:"success", buttons:"باشه"})
                       let newUserBasket = {
                           id:productData.userBasket.length+1,
                           name:product.name,
