@@ -26,7 +26,7 @@ const handlerBtnPlus = (index)=>{
 const handlerRemoveProducts = (productID) => {
     let newBasket = productData.userBasket.filter(product => product.id !== productID);
     productData.setUserBasket(newBasket);
-    swal({title:"محصول حذف  شد", icon:'success'})
+    swal({title:"محصول حذف  شد", icon:'success' ,buttons:"باشه"})
 
 };
   return (
