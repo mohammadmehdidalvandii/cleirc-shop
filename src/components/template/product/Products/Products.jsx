@@ -48,16 +48,22 @@ function Products() {
                     productData.products.map(product=>(
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
                       <ProductCard {...product}  price={product.price.toLocaleString()} key={product.id} 
-                      addToBasket={()=>{
-                        swal({title:"محصول اضافه شد", icon:"success"})
-                        let newUserBasket = {
-                            id:productData.userBasket.length+1,
-                            name:product.name,
-                            img:product.img,
-                            price: product.price
-                        }
-                        productData.setUserBasket((prevProducts)=>[...prevProducts,newUserBasket])
-                      }} />
+                           addToBasket={()=>{
+                            const existingProduct = productData.userBasket.find(product => product.id === product.id);
+
+                            if (existingProduct) {
+                                swal({ title: "این محصول در سبد خرید وجود دارد", icon: "warning" });
+                            } else {
+                                swal({ title: "محصول اضافه شد", icon: "success" });
+                                let newUserBasket = {
+                                    id: product.id,
+                                    name: product.name,
+                                    img: product.img,
+                                    price: product.price
+                                }
+                                productData.setUserBasket((prevProducts) => [...prevProducts, newUserBasket]);
+                            }
+                          }} />
                       </div>
                   ))
                 ):(
@@ -65,14 +71,20 @@ function Products() {
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
                       <ProductCard {...product} price={product.price.toLocaleString()} key={product.id}
                            addToBasket={()=>{
-                            swal({title:"محصول اضافه شد" ,icon:"success" ,buttons:"باشه"})
-                            let newUserBasket = {
-                                id:productData.userBasket.length+1,
-                                name:product.name,
-                                img:product.img,
-                                price: product.price
+                            const existingProduct = productData.userBasket.find(product => product.id === product.id);
+
+                            if (existingProduct) {
+                                swal({ title: "این محصول در سبد خرید وجود دارد", icon: "warning" });
+                            } else {
+                                swal({ title: "محصول اضافه شد", icon: "success" });
+                                let newUserBasket = {
+                                    id: product.id,
+                                    name: product.name,
+                                    img: product.img,
+                                    price: product.price
+                                }
+                                productData.setUserBasket((prevProducts) => [...prevProducts, newUserBasket]);
                             }
-                            productData.setUserBasket((prevProducts)=>[...prevProducts,newUserBasket])
                           }}
                       />
                       </div>
