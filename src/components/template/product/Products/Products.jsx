@@ -49,7 +49,7 @@ function Products() {
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
                       <ProductCard {...product}  price={product.price.toLocaleString()} key={product.id} 
                       addToBasket={()=>{
-                        swal({title:"محصول اضافه شد"})
+                        swal({title:"محصول اضافه شد", icon:"success"})
                         let newUserBasket = {
                             id:productData.userBasket.length+1,
                             name:product.name,

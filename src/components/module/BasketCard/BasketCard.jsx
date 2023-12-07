@@ -2,6 +2,7 @@ import { useContext, useState } from 'react'
 import './BasketCard.css'
 import {RiDeleteBin6Line} from 'react-icons/ri'
 import productContext from '../../../contexts/productContext'
+import swal from 'sweetalert'
 function BasketCard() {
     const productData = useContext(productContext)
   
@@ -19,9 +20,15 @@ function BasketCard() {
     }
 const handlerBtnPlus = (index)=>{
     let newCounts = [...counts]
- newCounts[index] = newCounts[index] + 1
+ newCounts[index] = newCounts[index] + 1        
  SetCounts(newCounts)
 }
+const handlerRemoveProducts = (productID) => {
+    let newBasket = productData.userBasket.filter(product => product.id !== productID);
+    productData.setUserBasket(newBasket);
+    swal({title:"محصول حذف  شد", icon:'success'})
+
+};
   return (
         <>
             {productData.userBasket.map((product,index)=>(
@@ -45,7 +52,7 @@ const handlerBtnPlus = (index)=>{
                               <span className="basketCard-price">{product.price * counts[index] || product.price } تومان</span> 
                           </li>
                           <li className="basketCard-item">
-                              <span className="basketCard-DeleteBtn">
+                              <span className="basketCard-DeleteBtn" onClick={()=>handlerRemoveProducts(product.id)}>
                                   <RiDeleteBin6Line/>
                               </span>
                           </li>
