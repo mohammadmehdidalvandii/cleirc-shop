@@ -49,9 +49,12 @@ function Products() {
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
                       <ProductCard {...product}  price={product.price.toLocaleString()} key={product.id} 
                            addToBasket={()=>{
-                            const existingProduct = productData.userBasket.find(product => product.id === product.id);
-
-                            if (existingProduct) {
+                            let isProductInBasket = productData.userBasket.some(basketProduct => 
+                                basketProduct.name === product.name && 
+                                basketProduct.price === product.price
+                            );
+                            
+                            if (isProductInBasket) {
                                 swal({ title: "این محصول در سبد خرید وجود دارد", icon: "warning" });
                             } else {
                                 swal({ title: "محصول اضافه شد", icon: "success" });
@@ -71,12 +74,14 @@ function Products() {
                         <div className="col-lg-3 col-md-6 col-sm-12" key={product.id}>
                       <ProductCard {...product} price={product.price.toLocaleString()} key={product.id}
                            addToBasket={()=>{
-                            const existingProduct = productData.userBasket.find(product => product.id === product.id);
-
-                            if (existingProduct) {
+                            let isProductInBasket = productData.userBasket.some(basketProduct => 
+                                basketProduct.name === product.name 
+                            );
+                            
+                            if (isProductInBasket) {
                                 swal({ title: "این محصول در سبد خرید وجود دارد", icon: "warning" });
                             } else {
-                                swal({ title: "محصول اضافه شد", icon: "success" });
+                                swal({ title: "محصول اضافه شد", icon: "success" , buttons:"باشه" });
                                 let newUserBasket = {
                                     id: product.id,
                                     name: product.name,
