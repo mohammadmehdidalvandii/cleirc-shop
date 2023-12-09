@@ -1,4 +1,4 @@
-import BasketCard from '../../module/BasketCard/BasketCard'
+import BasketCard from '../../../module/BasketCard/BasketCard'
 import './BasketPage.css'
 import {NavLink} from 'react-router-dom'
 
@@ -11,12 +11,12 @@ function BasketPage() {
                     <BasketCard/>
                 </div>
             </div>
-            <div className="row mt-4">
+            {/* <div className="row mt-4">
                 <div className="basketPage-card">
                     <span className="basketPage-card-price">تومان</span>
                 <NavLink to='/' className='basketPage-card-btn'>ادامه خرید</NavLink>
                 </div>
-            </div>
+            </div> */}
         </div>
     </section>
   )

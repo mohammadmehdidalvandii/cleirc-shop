@@ -1,5 +1,5 @@
 import NavStatus from '../../components/module/NavStatus/NavStatus'
-import BasketPage from '../../components/template/basket/BasketPage'
+import BasketPage from '../../components/template/basket/BasketPage/BasketPage'
 
 function Basket() {
   return (

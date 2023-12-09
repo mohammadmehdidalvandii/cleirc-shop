@@ -2,13 +2,18 @@ import { useContext, useState } from 'react'
 import './BasketCard.css'
 import {RiDeleteBin6Line} from 'react-icons/ri'
 import productContext from '../../../contexts/productContext'
+import { NavLink } from 'react-router-dom'
 import swal from 'sweetalert'
 function BasketCard() {
     const productData = useContext(productContext)
-  
-
     const [counts ,SetCounts] = useState(productData.userBasket.map(product=>product.count))
 
+    let totalPrice = productData.userBasket.reduce((index, product) => index + (product.price * counts[index] || product.price), 0);
+    if(totalPrice === 0 ){
+        totalPrice = 'هیچ محصولی در سبد خرید نیست'
+        }else{
+            totalPrice = totalPrice.toLocaleString() + 'تومان'
+        }
     const handlerBtnMinus =(index)=>{
         let newCounts = [...counts]
         if(newCounts[index]  === 1){
@@ -49,7 +54,7 @@ const handlerRemoveProducts = (productID) => {
                               </div>
                           </li>
                           <li className="basketCard-item">
-                              <span className="basketCard-price">{product.price * counts[index] || product.price } تومان</span> 
+                              <span className="basketCard-price">{ (product.price * counts[index]).toLocaleString() || product.price.toLocaleString() } تومان</span> 
                           </li>
                           <li className="basketCard-item">
                               <span className="basketCard-DeleteBtn" onClick={()=>handlerRemoveProducts(product.id)}>
@@ -59,6 +64,13 @@ const handlerRemoveProducts = (productID) => {
                       </ul>
                      </div>  
             ))}
+
+<div className="row mt-4">
+                <div className="basketPage-card">
+                    <span className="basketPage-card-price">{totalPrice}</span>
+                <NavLink to='/' className='basketPage-card-btn'>ادامه خرید</NavLink>
+                </div>
+            </div>
         </>
   )
 }
