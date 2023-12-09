@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useState,useEffect } from 'react'
 import './BasketCard.css'
 import {RiDeleteBin6Line} from 'react-icons/ri'
 import productContext from '../../../contexts/productContext'
@@ -7,13 +7,19 @@ import swal from 'sweetalert'
 function BasketCard() {
     const productData = useContext(productContext)
     const [counts ,SetCounts] = useState(productData.userBasket.map(product=>product.count))
+    const [totalPrice, setTotalPrice] = useState(0);
 
-    let totalPrice = productData.userBasket.reduce((index, product) => index + (product.price * counts[index] || product.price), 0);
-    if(totalPrice === 0 ){
-        totalPrice = 'هیچ محصولی در سبد خرید نیست'
-        }else{
-            totalPrice = totalPrice.toLocaleString() + 'تومان'
-        }
+    const calculateTotalPrice = () => {
+        let sum = 0;
+        productData.userBasket.forEach((product, index) => {
+            sum += product.price * counts[index];
+        });
+        setTotalPrice(sum);
+    };
+    useEffect(() => {
+        calculateTotalPrice();
+    }, [productData.userBasket.length]);
+
     const handlerBtnMinus =(index)=>{
         let newCounts = [...counts]
         if(newCounts[index]  === 1){
@@ -67,7 +73,7 @@ const handlerRemoveProducts = (productID) => {
 
 <div className="row mt-4">
                 <div className="basketPage-card">
-                    <span className="basketPage-card-price">{totalPrice}</span>
+                    <span className="basketPage-card-price">{totalPrice.toLocaleString()} تومان</span>
                 <NavLink to='/' className='basketPage-card-btn'>ادامه خرید</NavLink>
                 </div>
             </div>
