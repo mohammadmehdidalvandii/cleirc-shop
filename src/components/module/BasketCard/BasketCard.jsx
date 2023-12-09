@@ -7,7 +7,7 @@ function BasketCard() {
     const productData = useContext(productContext)
   
 
-    const [counts ,SetCounts] = useState(productData.userBasket.map(product=>product.count === 1))
+    const [counts ,SetCounts] = useState(productData.userBasket.map(product=>product.count))
 
     const handlerBtnMinus =(index)=>{
         let newCounts = [...counts]

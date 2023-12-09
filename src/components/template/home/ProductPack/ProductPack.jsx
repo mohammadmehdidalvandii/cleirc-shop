@@ -93,7 +93,8 @@ function ProductPack() {
                                     id: product.id,
                                     name: product.name,
                                     img: product.img,
-                                    price: product.price
+                                    price: product.price,
+                                    count: product.count
                                 }
                                 productData.setUserBasket((prevProducts) => [...prevProducts, newUserBasket]);
                             }

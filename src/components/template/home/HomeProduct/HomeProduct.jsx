@@ -59,7 +59,8 @@ function HomeProduct() {
                           id:productData.userBasket.length+1,
                           name:product.name,
                           img:product.img,
-                          price: product.price
+                          price: product.price,
+                          count: product.count
                       }
                       productData.setUserBasket((prevProducts)=>[...prevProducts,newUserBasket])
                     }}
