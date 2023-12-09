@@ -56,7 +56,7 @@ function HomeProduct() {
                      addToBasket={()=>{
                       swal({title:"محصول اضافه شد", icon:"success", buttons:"باشه"})
                       let newUserBasket = {
-                          id:productData.userBasket.length+1,
+                          id:product.id,
                           name:product.name,
                           img:product.img,
                           price: product.price,
