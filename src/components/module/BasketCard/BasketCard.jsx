@@ -18,7 +18,7 @@ function BasketCard() {
     };
     useEffect(() => {
         calculateTotalPrice();
-    }, [productData.userBasket.length]);
+    }, [productData.userBasket.length , counts]);
 
     const handlerBtnMinus =(index)=>{
         let newCounts = [...counts]
